@@ -54,6 +54,6 @@ app.post("/create-checkout-session", async (req, res) => {
   });
   
 // Démarrer le serveur
-app.listen(PORT, () => {
-    console.log(`Serveur démarré sur http://localhost:${PORT}`);
-  });
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`✅ Serveur démarré sur le port ${PORT}`);
+});
